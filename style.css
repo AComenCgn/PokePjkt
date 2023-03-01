@@ -1,0 +1,264 @@
+body {
+    margin: 0px;
+    font-family: 'Economica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.header {
+    padding: 0 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+#search {
+    width: 250px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(246, 246, 246);
+    background-image: url('./img/icon_search.png');
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    padding: 6px 11px 10px 62px;
+    outline: none;
+    background-size: 22px;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.background {
+    display: flex;
+    background-color: #dcdcdcbb;
+    height: 95%;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.card {
+    height: 220px;
+    width: 199px;
+    background-color: rgb(70, 200, 169);
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px 50px;
+    margin: 8px;
+    cursor: pointer;
+    justify-content: center;
+    box-shadow: 2px 2px 10px 3px rgb(0 0 0 / 20%);
+    /* display: flex; */
+}
+.card :hover{
+    filter: saturate(1.7);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}
+.red {
+    background-color: rgb(241, 105, 104) !important;
+}
+
+.blue {
+    background-color: rgb(111, 182, 245) !important;
+}
+
+.yellow {
+    background-color: rgb(245, 208, 107) !important;
+}
+
+.grey {
+    background-color: rgb(225, 225, 225) !important;
+}
+
+.violet {
+    background-color: rgb(165, 97, 165);
+}
+
+.green {
+    background-color: rgb(70, 200, 169) !important;
+}
+
+.lila {
+    background-color: rgb(165, 97, 165) !important;
+}
+
+
+.pokemon-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+.pokemon-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.pokemon-card-wrapper img {
+    height: 100px;
+    width: 100px;
+}
+
+.pokemon-card-class {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pokemon-card-class div {
+    background-color: rgb(0 0 0 / 20%);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.popUp-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-card {
+    
+    box-shadow: 2px 2px 10px 3px rgb(0 0 0 / 20%);
+    height: 690px;
+    width: 450px;
+    z-index: 99;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.top-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+    background-color: rgb(70, 200, 169);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 53%;
+    background-color: #f9f9f9;
+    margin-top: -30px;
+    border-radius: 20px;
+}
+
+.cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    margin-top: -283px;
+    margin-left: 80px;
+}
+
+.top-container h1 {
+    font-size: 32px;
+    margin-bottom: 2px !important;
+    padding-left: 15px;
+}
+
+.top-container img {
+    cursor: pointer;
+    margin-left: 382px;
+    width: 31px;
+    height: 31px;
+    z-index: 100;
+
+}
+
+.top-container :hover {
+    filter: saturate(1.7);
+}
+
+.cardId {
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.cardTypes {
+    display: flex;
+    justify-content: start;
+}
+
+.cardTypes div {
+    margin-left: 15px;
+    margin-right: 12px;
+    background-color: rgba(251, 253, 253, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardtab {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgrey;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.cardtab div {
+    margin: 25px;
+}
+
+.details {
+    color: black;
+    margin-left: 20px;
+}
+
+.details div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkgray;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btnMore {
+    cursor: pointer;
+    margin-left: 3px;
+    border: 0.01px solid #ccc;
+    border-radius: 4px;
+    color: lightblue;
+    font-size: medium;
+    background-color: white;
+    padding: 11px;
+}
